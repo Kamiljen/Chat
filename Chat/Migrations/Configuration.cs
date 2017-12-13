@@ -23,11 +23,12 @@ namespace Chat.Migrations
             );
             context.ChatMessage.AddOrUpdate(
                 i => i.ChatMessageId,
-                new ChatMessage() { ChatMessageId = 1, Message = "Hej på dig",UserId = 1, TimeStamp = DateTime.Now},
-                new ChatMessage() { ChatMessageId = 2, Message = "Tja", UserId = 2, TimeStamp = DateTime.Now},
-                new ChatMessage() { ChatMessageId = 3, Message = "Visste du att Alex är bäst?", UserId = 1, TimeStamp = DateTime.Now},
-                new ChatMessage() { ChatMessageId = 4, Message = "Ja såklart, är du lite efter eller?", UserId = 2, TimeStamp = DateTime.Now}
+                new ChatMessage() { ChatMessageId = 1, Message = "Hej på dig", UserId = 1, TimeStamp = DateTime.Now },
+                new ChatMessage() { ChatMessageId = 2, Message = "Tja", UserId = 2, TimeStamp = DateTime.Now },
+                new ChatMessage() { ChatMessageId = 3, Message = "Visste du att Alex är bäst?", UserId = 1, TimeStamp = DateTime.Now },
+                new ChatMessage() { ChatMessageId = 4, Message = "Ja såklart, är du lite efter eller?", UserId = 2, TimeStamp = DateTime.Now }
             );
+
         }
     }
 }
